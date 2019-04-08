@@ -6,6 +6,8 @@ ruby '2.6.0'
 gem 'rails',                    '~> 5.2.3'
 gem 'bcrypt',                   '~> 3.1', '>= 3.1.12'
 gem 'faker',                    '~> 1.6', '>= 1.6.3'
+gem 'carrierwave',              '~> 1.3', '>= 1.3.1'
+gem 'mini_magick',              '~> 4.9', '>= 4.9.3'
 gem 'will_paginate',            '~> 3.1'
 gem 'bootstrap-will_paginate',  '~> 1.0'
 gem 'bootstrap-sass',           '~> 3.4', '>= 3.4.1'
@@ -38,7 +40,8 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '~> 1.1', '>= 1.1.4'
+  gem 'pg',   '~> 1.1', '>= 1.1.4'
+  gem 'fog',  '~> 2.1'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
